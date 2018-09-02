@@ -1,3 +1,9 @@
+import "../assets/vendor/nucleo/css/nucleo.css";
+import "../assets/vendor/font-awesome/css/font-awesome.css";
+import "../assets/scss/argon.scss";
+
+import VueLazyload from "vue-lazyload";
+
 import Badge from '../components/Badge';
 import BaseAlert from '../components/BaseAlert';
 import BaseButton from '../components/BaseButton';
@@ -27,5 +33,6 @@ export default {
     Vue.component('CardEl', Card);
     Vue.component('IconEl', Icon);
     Vue.directive('ClickOutside', clickOutside);
+    Vue.use(VueLazyload);
   },
 };
