@@ -20,18 +20,18 @@ import clickOutside from '../directives/click-ouside.js';
 
 export default {
   install(Vue) {
-    Vue.component('BadgeEl', Badge);
-    Vue.component('AlertEl', BaseAlert);
-    Vue.component('ButtonEl', BaseButton);
-    Vue.component('InputEl', BaseInput);
-    Vue.component('CheckboxEl', BaseCheckbox);
-    Vue.component('PaginationEl', BasePagination);
-    Vue.component('ProgressEl', BaseProgress);
-    Vue.component('RadioEl', BaseRadio);
-    Vue.component('SliderEl', BaseSlider);
-    Vue.component('SwitchEl', BaseSwitch);
-    Vue.component('CardEl', Card);
-    Vue.component('IconEl', Icon);
+    Vue.component(Badge.name, Badge);
+    Vue.component(BaseAlert.name, BaseAlert);
+    Vue.component(BaseButton.name, BaseButton);
+    Vue.component(BaseInput.name, BaseInput);
+    Vue.component(BaseCheckbox.name, BaseCheckbox);
+    Vue.component(BasePagination.name, BasePagination);
+    Vue.component(BaseProgress.name, BaseProgress);
+    Vue.component(BaseRadio.name, BaseRadio);
+    Vue.component(BaseSlider.name, BaseSlider);
+    Vue.component(BaseSwitch.name, BaseSwitch);
+    Vue.component(Card.name, Card);
+    Vue.component(Icon.name, Icon);
     Vue.directive('ClickOutside', clickOutside);
     Vue.use(VueLazyload);
   },
